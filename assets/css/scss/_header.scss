@@ -1,0 +1,16 @@
+.site-title{
+    background: yellow;
+    a{
+        color: $primary;
+        font-size: 100px;
+        border: 2px solid green;
+        span{
+            background: blue;
+        }
+    }
+}
+
+.site-title a p{
+    border-color: $primary;
+}
+

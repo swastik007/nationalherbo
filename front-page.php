@@ -8,7 +8,8 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-        
+    <!-- banner section area -->
+    <?php get_template_part( 'template-parts/video-section', 'none' ); ?>     
     <!-- banner section area -->
     <?php get_template_part( 'template-parts/banner-section', 'none' ); ?>
     <!-- about section area -->

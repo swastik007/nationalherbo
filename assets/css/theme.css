@@ -1,5 +1,15 @@
-.entry-title{
-    color: red!important;
-    font-size: 100px;
+.site-title {
+  background: yellow;
+}
+.site-title a {
+  color: darkblue;
+  font-size: 100px;
+  border: 2px solid green;
+}
+.site-title a span {
+  background: blue;
 }
 
+.site-title a p {
+  border-color: darkblue;
+}/*# sourceMappingURL=theme.css.map */

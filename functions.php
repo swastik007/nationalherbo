@@ -176,15 +176,136 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/* Custom Post Type */
+/* create custom post team members */
+
+
+function team_members_post() {
+
+	// Set UI labels for Custom Post Type
+	$labels = array(
+		'name'                => _x( 'Team Member', 'Post Type General Name', 'nationalherbo' ),
+		'singular_name'       => _x( 'Team Member', 'Post Type Singular Name', 'nationalherbo' ),
+		'menu_name'           => __( 'Team Members', 'nationalherbo' ),
+		'parent_item_colon'   => __( 'Parent Team Member', 'nationalherbo' ),
+		'all_items'           => __( 'All Team Members', 'nationalherbo' ),
+		'view_item'           => __( 'View Team Member', 'nationalherbo' ),
+		'add_new_item'        => __( 'Add Team Member', 'nationalherbo' ),
+		'add_new'             => __( 'Add Team Member', 'nationalherbo' ),
+		'edit_item'           => __( 'Edit Team Member', 'nationalherbo' ),
+		'update_item'         => __( 'Update Team Member', 'nationalherbo' ),
+		'search_items'        => __( 'Search Team Member', 'nationalherbo' ),
+		'not_found'           => __( 'Not Found', 'nationalherbo' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'nationalherbo' ),
+	);
+	
+	
+	// Set other options for Custom Post Type
+	
+	$args = array(
+		'label'               => __( 'Team Members', 'nationalherbo' ),
+		'description'         => __( 'Team Member news and reviews', 'nationalherbo' ),
+		'labels'              => $labels,
+		// Features this CPT supports in Post Editor
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', 'page-attributes' ),
+		// You can associate this CPT with a taxonomy or custom taxonomy. 
+		'taxonomies'          => array( 'department' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 7,
+		'menu_icon'           => 'dashicons-universal-access-alt',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+		'show_in_rest' => true,
+		// This is where we add taxonomies to our CPT
+		'taxonomies'          => array( 'post_tag','department' ),
+		); 
+	
+	// Registering your Custom Post Type
+	register_post_type( 'team-members', $args );
+	
+	}
+		
+	add_action( 'init', 'team_members_post', 0 );
+
+
+/* create custom post team members */
+
+
+function video_post() {
+
+	// Set UI labels for Custom Post Type
+	$labels = array(
+		'name'                => _x( 'Video', 'Post Type General Name', 'nationalherbo' ),
+		'singular_name'       => _x( 'Video', 'Post Type Singular Name', 'nationalherbo' ),
+		'menu_name'           => __( 'Videos', 'nationalherbo' ),
+		'parent_item_colon'   => __( 'Parent Video', 'nationalherbo' ),
+		'all_items'           => __( 'All Videos', 'nationalherbo' ),
+		'view_item'           => __( 'View Video', 'nationalherbo' ),
+		'add_new_item'        => __( 'Add Video', 'nationalherbo' ),
+		'add_new'             => __( 'Add Video', 'nationalherbo' ),
+		'edit_item'           => __( 'Edit Video', 'nationalherbo' ),
+		'update_item'         => __( 'Update Video', 'nationalherbo' ),
+		'search_items'        => __( 'Search Video', 'nationalherbo' ),
+		'not_found'           => __( 'Not Found', 'nationalherbo' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'nationalherbo' ),
+	);
+	
+	
+	// Set other options for Custom Post Type
+	
+	$args = array(
+		'label'               => __( 'Videos', 'nationalherbo' ),
+		'description'         => __( 'Video news and reviews', 'nationalherbo' ),
+		'labels'              => $labels,
+		// Features this CPT supports in Post Editor
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', 'page-attributes' ),
+		// You can associate this CPT with a taxonomy or custom taxonomy. 
+		'taxonomies'          => array( 'department' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'menu_icon'           => 'dashicons-controls-play',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+		'show_in_rest' => true,
+		// This is where we add taxonomies to our CPT
+		'taxonomies'          => array( 'post_tag','department' ),
+		); 
+	
+	// Registering your Custom Post Type
+	register_post_type( 'video_post', $args );
+	
+	}
+		
+	add_action( 'init', 'video_post', 0 );
+
+
 function theme_stylescript(){
     wp_enqueue_style( 'owl_theme_css', get_template_directory_uri() . '/assets/vendor/owl/owl.theme.default.css' );
     wp_enqueue_style( 'owlcarousel_css', get_template_directory_uri() . '/assets/vendor/owl/owl.carousel.min.css' );
     wp_enqueue_style( 'bootstrap_icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css' );
+	// wp_enqueue_style( 'tailwind_css', get_template_directory_uri() . '/assets/css/src/output.css', array(), '0.2.8' );
     wp_enqueue_style( 'nationalherbo_css', get_template_directory_uri() . '/assets/css/theme.css', array(), '0.2.8' );
     // Enqueue jQuery
 // wp_enqueue_script('jquery');
      // Enqueue jQuery from CDN
     // wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), '3.6.0', true);
+	wp_enqueue_script( 'tailwind_css_script', 'https://cdn.tailwindcss.com/3.4.16' );
      // Enqueue other JS files
     wp_enqueue_script( 'owlcarousel_js', get_template_directory_uri() . '/assets/vendor/owl/owl.carousel.min.js', array('jquery'), null, true );
 	
