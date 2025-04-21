@@ -1,0 +1,21 @@
+<?php
+/**
+ * This is template file for homepage
+ * @package National_herbo
+ */
+
+get_header();
+?>
+
+	<main id="primary" class="site-main">
+        
+    <!-- banner section area -->
+    <?php get_template_part( 'template-parts/banner-section', 'none' ); ?>
+    <!-- about section area -->
+    <?php get_template_part( 'template-parts/about-section', 'none' ); ?>
+
+	</main><!-- #main -->
+
+<?php
+
+get_footer();
