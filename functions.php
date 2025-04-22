@@ -184,7 +184,7 @@ function team_members_post() {
 
 	// Set UI labels for Custom Post Type
 	$labels = array(
-		'name'                => _x( 'Team Member', 'Post Type General Name', 'nationalherbo' ),
+		'name'                => _x( 'Team Members', 'Post Type General Name', 'nationalherbo' ),
 		'singular_name'       => _x( 'Team Member', 'Post Type Singular Name', 'nationalherbo' ),
 		'menu_name'           => __( 'Team Members', 'nationalherbo' ),
 		'parent_item_colon'   => __( 'Parent Team Member', 'nationalherbo' ),
@@ -243,7 +243,7 @@ function video_post() {
 
 	// Set UI labels for Custom Post Type
 	$labels = array(
-		'name'                => _x( 'Video', 'Post Type General Name', 'nationalherbo' ),
+		'name'                => _x( 'Videos', 'Post Type General Name', 'nationalherbo' ),
 		'singular_name'       => _x( 'Video', 'Post Type Singular Name', 'nationalherbo' ),
 		'menu_name'           => __( 'Videos', 'nationalherbo' ),
 		'parent_item_colon'   => __( 'Parent Video', 'nationalherbo' ),
@@ -294,6 +294,54 @@ function video_post() {
 		
 	add_action( 'init', 'video_post', 0 );
 
+	//adding demo custom post type for subscription by ashish
+	function subscription_post() {
+
+		// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Subscriptions', 'Post Type General Name', 'nationalherbo' ),
+			'singular_name'       => _x( 'Subscription', 'Post Type Singular Name', 'nationalherbo' ),
+			'menu_name'           => __( 'Subscriptions', 'nationalherbo' ),
+			'parent_item_colon'   => __( 'Parent Subscription', 'nationalherbo' ),
+			'all_items'           => __( 'All Subscriptions', 'nationalherbo' ),
+			'view_item'           => __( 'View Subscription', 'nationalherbo' ),
+			'add_new_item'        => __( 'Add New Subscription', 'nationalherbo' ),
+			'add_new'             => __( 'Add New', 'nationalherbo' ),
+			'edit_item'           => __( 'Edit Subscription', 'nationalherbo' ),
+			'update_item'         => __( 'Update Subscription', 'nationalherbo' ),
+			'search_items'        => __( 'Search Subscription', 'nationalherbo' ),
+			'not_found'           => __( 'Not Found', 'nationalherbo' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'nationalherbo' ),
+		);
+	
+		// Set other options
+		$args = array(
+			'label'               => __( 'Subscriptions', 'nationalherbo' ),
+			'description'         => __( 'Subscription plans or packages', 'nationalherbo' ),
+			'labels'              => $labels,
+			'supports'            => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'revisions' ),
+			'taxonomies'          => array( 'category', 'post_tag' ), // Optional
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 6,
+			'menu_icon'           => 'dashicons-groups',
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'show_in_rest'        => true,
+			'capability_type'     => 'post',
+		);
+	
+		register_post_type( 'subscription', $args );
+	}
+	
+	add_action( 'init', 'subscription_post', 0 );
+	
 
 function theme_stylescript(){
     wp_enqueue_style( 'owl_theme_css', get_template_directory_uri() . '/assets/vendor/owl/owl.theme.default.css' );
