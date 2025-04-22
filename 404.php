@@ -14,6 +14,7 @@ get_header();
 
 		<section class="error-404 not-found">
 			<header class="page-header">
+				<h1>Herbal Products</h1>
 				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'national-herbo' ); ?></h1>
 			</header><!-- .page-header -->
 
@@ -36,7 +37,7 @@ get_header();
 									'order'      => 'DESC',
 									'show_count' => 1,
 									'title_li'   => '',
-									'number'     => 10,
+									'number'     => 15,
 								)
 							);
 							?>
