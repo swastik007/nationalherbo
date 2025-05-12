@@ -342,21 +342,31 @@ function video_post() {
 	
 	add_action( 'init', 'subscription_post', 0 );
 	
+function theme_stylescript() {
+    // Bootstrap 5 CSS
+    wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/assets/vendor/css/bootstrap.min.css' );
 
-function theme_stylescript(){
+    // Optional: Bootstrap Icons
+    wp_enqueue_style( 'bootstrap_icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css' );
+
+    // Owl Carousel CSS
     wp_enqueue_style( 'owl_theme_css', get_template_directory_uri() . '/assets/vendor/owl/owl.theme.default.css' );
     wp_enqueue_style( 'owlcarousel_css', get_template_directory_uri() . '/assets/vendor/owl/owl.carousel.min.css' );
-    wp_enqueue_style( 'bootstrap_icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css' );
-	// wp_enqueue_style( 'tailwind_css', get_template_directory_uri() . '/assets/css/src/output.css', array(), '0.2.8' );
-    wp_enqueue_style( 'nationalherbo_css', get_template_directory_uri() . '/assets/css/theme.css', array(), '0.2.8' );
-    // Enqueue jQuery
-	// wp_enqueue_script('jquery');
-    // Enqueue jQuery from CDN
-    // wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), '3.6.0', true);
-	wp_enqueue_script( 'tailwind_css_script', 'https://cdn.tailwindcss.com/3.4.16' );
-    // Enqueue other JS files
-    wp_enqueue_script( 'owlcarousel_js', get_template_directory_uri() . '/assets/vendor/owl/owl.carousel.min.js', array('jquery'), null, true );	
-    wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/assets/js/theme.js', array('jquery'), '2.2.8', true );
-}
 
+    // Your Custom CSS
+    wp_enqueue_style( 'nationalherbo_css', get_template_directory_uri() . '/assets/css/theme.css', array(), '1.0' );
+
+    // Bootstrap 5 JS
+    wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/vendor/js/bootstrap.min.js', array(), null, true );
+
+    // Owl Carousel JS
+    wp_enqueue_script( 'owlcarousel_js', get_template_directory_uri() . '/assets/vendor/owl/owl.carousel.min.js', array('jquery'), null, true );
+
+    // Your Custom JS
+    wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/assets/js/theme.js', array('jquery'), '1.0', true );
+
+	// jQuery
+	wp_enqueue_script('jquery');
+
+}
 add_action('wp_enqueue_scripts', 'theme_stylescript');
