@@ -18,6 +18,11 @@
         
     <!-- about section area -->
     <?php get_template_part( 'template-parts/about-section', 'none' ); ?>
+    <!-- about section area -->
+    
+    <!-- customer section area -->
+    <?php get_template_part( 'template-parts/customer', 'none' ); ?>
+    <!-- customer section area -->
 
 	</main><!-- #main -->
 

@@ -1,0 +1,30 @@
+.customer-stats-section {
+  background-color: #fff;
+
+  .card {
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-wrapper,
+    i {
+      color: $primary;
+    }
+
+    h3 {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #6c757d;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-<section class="topbar d-none d-md-block py-2 bg-primary text-white">
+<section class="topbar d-none d-md-block py-2 text-white">
   <div class="container">
     <ul class="d-flex justify-content-center align-items-center flex-wrap gap-4 list-unstyled mb-0">
       <li class="d-flex align-items-center gap-2">
@@ -18,7 +18,7 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0906 17.75C16.625 17.757 18.3332 15.6746 18.3332 13.1153V7.39168C18.3332 4.83235 16.625 2.75 14.0906 2.75H5.90912C3.37466 2.75 1.6665 4.83235 1.6665 7.39168V13.1153C1.6665 15.6746 3.37466 17.757 5.90912 17.75H14.0906Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </span>
-        <span>info@bhaskarherba.com</span>
+        <span>info@nationalherbs.com</span>
       </li>
       <li class="d-flex align-items-center gap-2">
         <span class="icon">
@@ -27,7 +27,7 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2082 17.9576C10.2082 17.9576 4.14493 14.0083 3.99215 9.08037C3.88488 5.6202 6.77469 2.54102 10.2082 2.54102C13.6416 2.54102 16.5307 5.62015 16.4249 9.08037C16.2712 14.1093 10.2082 17.9576 10.2082 17.9576Z" stroke="white" stroke-linecap="round" />
           </svg>
         </span>
-        <span>3rd Floor, KVD Complex Balkumari, Lalitpur</span>
+        <span>Nayabazar, Sorakhutte, Kathmandu</span>
       </li>
     </ul>
   </div>

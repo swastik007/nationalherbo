@@ -13,7 +13,7 @@
       <a href="<?php echo esc_url(home_url('/')); ?>">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo('name'); ?>">
       </a>
-      <p class="subtitle">Herbaceuticals Pvt. Ltd.</p>
+      <p class="subtitle">Pvt. Ltd.</p>
     </div>
 
     <button class="nav-toggle" aria-label="Toggle menu">
@@ -31,22 +31,23 @@
     </nav>
 
     <div class="header-right">
-      <a href="<?php echo esc_url(home_url('/contact-us')); ?>" class="btn-contact">Contact Us</a>
-      <div class="social-icons">
+      <a href="<?php echo esc_url(home_url('/contact-us')); ?>" class="btn">Contact Us</a>
+      <!-- <div class="social-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
+      </div> -->
     </div>
   </div>
 </header>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.querySelector('.nav-toggle');
-    const menu = document.querySelector('.main-nav .menu');
-    
+    const nav = document.querySelector('.main-nav');
+
     toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
+      toggle.classList.toggle('open');
+      nav.classList.toggle('active');
     });
   });
 </script>
