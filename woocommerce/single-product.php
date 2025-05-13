@@ -29,7 +29,7 @@ if (have_posts()) :
         <div class="container py-5">
             <div class="row g-5">
                 <!-- Product Images -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <?php if ($image_url) : ?>
                         <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($title); ?>" class="img-fluid rounded mb-3" />
                     <?php endif; ?>
@@ -43,7 +43,7 @@ if (have_posts()) :
                 </div>
 
                 <!-- Product Info -->
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <h1 class="h3 mb-3"><?php echo esc_html($title); ?></h1>
                     <div class="fs-4 text-success mb-3"><?php echo $price_html; ?></div>
                     <?php if (!empty($short_description)) : ?>
@@ -74,18 +74,19 @@ if (have_posts()) :
                         <li><strong>Categories:</strong> <?php echo $categories; ?></li>
                         <li><strong>Tags:</strong> <?php echo $tags; ?></li>
                     </ul>
+                      <!-- Description -->
+                    <?php if ($description) : ?>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <h4>Description</h4>
+                                <div><?php echo $description; ?></div>
+                            </div>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
 
-            <!-- Description -->
-            <?php if ($description) : ?>
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <h4>Description</h4>
-                        <div><?php echo $description; ?></div>
-                    </div>
-                </div>
-            <?php endif; ?>
+          
         </div>
 
     <?php

@@ -175,7 +175,25 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+if ( class_exists( 'WooCommerce' ) ) {
+    require get_template_directory() . '/inc/woocommerce.php';
+}
 
+add_action('after_setup_theme', function() {
+    add_theme_support('woocommerce');
+});
+
+// Force custom single-product.php template
+add_filter('template_include', function($template) {
+    if (is_product()) {
+        $custom_template = get_template_directory() . '/woocommerce/single-product.php';
+        if (file_exists($custom_template)) {
+            error_log('Forcing custom single-product.php template');
+            return $custom_template;
+        }
+    }
+    return $template;
+});
 /* Custom Post Type */
 /* create custom post team members */
 
@@ -374,13 +392,3 @@ function theme_stylescript() {
 
 }
 add_action('wp_enqueue_scripts', 'theme_stylescript');
-
-add_action('after_setup_theme', function() {
-    add_theme_support('woocommerce');
-});
-
-add_action('template_redirect', function() {
-    if (is_product()) {
-        echo '<!-- Current template: ' . get_single_template() . ' -->';
-    }
-});

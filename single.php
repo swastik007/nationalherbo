@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package National_herbo
+ * @package National_Herbo
  */
 
 get_header();
 ?>
 
 	<main id="primary" class="site-main">
-	
+
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -36,5 +36,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-
+get_sidebar();
 get_footer();
