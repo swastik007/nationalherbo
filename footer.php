@@ -7,57 +7,74 @@
  * @package YourThemeName
  */
 ?>
-
-<footer class="footer bg-light border-top mt-5">
-  <div class="container py-4">
-    <div class="row">
-      <!-- Contact Information -->
-      <div class="col-md-4 mb-3">
-        <h5>Contact Us</h5>
-        <p>123 Main Street<br>
-        Kathmandu, Nepal</p>
-        <p>Phone: <a href="tel:+977123456789">+977 123456789</a><br>
-        Email: <a href="mailto:info@example.com">info@nationalherbs.com</a></p>
+<footer class="footer bg-dark text-white pt-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <h5 class="mb-3 text-warning">Delhi Head Office</h5>
+        <p>D2/2 - 2nd Floor, Yadav Nagar, Delhi - 110042<br>Near Samay Puri Badli Metro Station</p>
       </div>
-
-      <!-- Quick Links -->
-      <div class="col-md-4 mb-3">
-        <h5>Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
-          <li><a href="<?php echo esc_url( home_url( '/about' ) ); ?>">About Us</a></li>
-          <li><a href="<?php echo esc_url( home_url( '/services' ) ); ?>">Services</a></li>
-          <li><a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact Us</a></li>
-        </ul>
+      <div class="col-md-6 col-lg-3">
+        <h5 class="mb-3 text-warning">Registered Office</h5>
+        <p>Plot no 1529, RAI Industrial Area,<br>Sonipat, Haryana - 131001</p>
       </div>
-
-      <!-- Newsletter Subscription -->
-      <div class="col-md-4 mb-3">
-        <h5>Subscribe to our Newsletter</h5>
-        <form action="#" method="post">
-          <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Enter your email" required>
-          </div>
-          <button type="submit" class="btn">Subscribe</button>
-        </form>
+      <div class="col-md-6 col-lg-3">
+        <h5 class="mb-3 text-warning">Phone Number</h5>
+        <p>+91-9829885383</p>
+        <h5 class="mb-3 text-warning">Email Address</h5>
+        <p>info@nationalherbo.com</p>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <h5 class="mb-3 text-white">Locate Us</h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112099.88212095685!2d77.024766278125!3d28.7522061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0146cfbf3cc1%3A0x1234567890abcdef!2sNational%20Herbo!5e0!3m2!1sen!2sin!4v1715599999999"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
 
-    <div class="row mt-4">
-      <div class="col">
-        <p class="mb-0">&copy; <?php echo date('Y'); ?> National Herbs. All rights reserved.</p>
-        <div class="social-icons mt-2">
-          <a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-dark me-3"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+    <hr class="my-4 border-light">
+
+    <div class="row g-4">
+      <div class="col-md-3">
+        <h6 class="text-white mb-3">About Us</h6>
+        <p>We offer top-quality Ayurvedic & Nutritional Products as a trusted third-party manufacturer across India.</p>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-white mb-3">Products</h6>
+        <ul class="list-unstyled">
+          <li>› Herbal Syrups & Tonics</li>
+          <li>› Capsules & Tablets</li>
+          <li>› Personal Care</li>
+          <li>› Food Supplements</li>
+          <li>› Herbal Juices</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-white mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Products</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-white mb-3">Follow Us</h6>
+        <div class="d-flex gap-2">
+          <a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-	  <div class="col right-0 text-right">
-		<p>Designed By: VS Nepal</p>
-	  </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <small>© 2025 Copyrights by <span class="text-warning">National Herbo</span>. All Rights Reserved.</small>
     </div>
   </div>
 </footer>
+
 
 <?php wp_footer(); ?>
 </body>

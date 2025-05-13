@@ -8,11 +8,14 @@
 ?>
 
 	<main id="primary" class="site-main">
-    <!-- banner section area -->
-    <?php get_template_part( 'template-parts/top-banner', 'none' ); ?>
-    <!-- banner section area -->
-
+        <!-- top-banner section area -->
+        <?php get_template_part( 'template-parts/top-banner', 'none' ); ?>
+        <!-- top-banner section area --> 
     <?php get_header(); ?>
+       
+    <!-- banner section area -->
+    <?php get_template_part( 'template-parts/homebanner', 'none' ); ?>
+    <!-- banner section area -->
 
     <!-- about section area -->
     <?php get_template_part( 'template-parts/about-section', 'none' ); ?>
@@ -25,13 +28,13 @@
     <!-- customer section area -->
     <?php get_template_part( 'template-parts/customer', 'none' ); ?>
     <!-- customer section area -->
- <!-- header section here -->
-        <?php get_template_part( 'template-parts/homebanner', 'none' ); ?>   
-        <?php get_template_part( 'template-parts/category-section', 'none' ); ?> 
-        <?php get_template_part( 'template-parts/product-section', 'none' ); ?>     
-    <!-- banner section area -->
-    <?php get_template_part( 'template-parts/video-section', 'none' ); ?>     
-     <?php get_template_part( 'template-parts/category-tea-section', 'none' ); ?> 
+
+    <!-- products display section area -->
+    <?php get_template_part( 'template-parts/category-section', 'none' ); ?> 
+    <?php get_template_part( 'template-parts/product-section', 'none' ); ?>     
+    <?php get_template_part( 'template-parts/category-tea-section', 'none' ); ?> 
+    <!-- products display section area --> 
+
 	</main><!-- #main -->
 
 <?php

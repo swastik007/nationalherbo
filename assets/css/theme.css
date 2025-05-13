@@ -182,36 +182,28 @@ a {
 }
 
 .footer {
-  background-color: #f8f9fa;
-  border-top: 1px solid #dee2e6;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  background-color: #111;
+  color: #ccc;
 }
-.footer h5 {
-  font-weight: 600;
-  margin-bottom: 1rem;
+.footer h5,
+.footer h6 {
+  color: #fff;
 }
-.footer ul {
-  padding-left: 0;
-  list-style: none;
+.footer a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #f0ad4e;
 }
 .footer ul li {
   margin-bottom: 0.5rem;
 }
-.footer ul li a {
-  color: #212529;
-  text-decoration: none;
+.footer iframe {
+  border-radius: 8px;
 }
-.footer ul li a:hover {
-  text-decoration: underline;
-}
-.footer .social-icons a {
-  font-size: 1.25rem;
-  color: #212529;
-  margin-right: 1rem;
-}
-.footer .social-icons a:hover {
-  color: #0d6efd;
+.footer .text-warning {
+  color: #f0ad4e;
 }
 
 .customer-section {
@@ -460,4 +452,85 @@ a {
 .whyus-section .whyus-card .description {
   font-size: 14px;
   color: #666;
+}
+
+.product-carousel-section .product-card {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+}
+.product-carousel-section .product-image {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.product-carousel-section .product-info-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 12px;
+  margin-top: 10px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-carousel-section .product-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+  min-height: 42px;
+}
+.product-carousel-section .product-price {
+  font-size: 14px;
+  color: #666;
+}
+
+.owl-carousel {
+  position: relative;
+  padding: 0 50px;
+}
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  right: -30px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 60px);
+  pointer-events: none;
+}
+.owl-carousel .owl-nav .custom-prev-arrow,
+.owl-carousel .owl-nav .custom-next-arrow {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  pointer-events: auto;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.owl-carousel .owl-nav .custom-prev-arrow:hover,
+.owl-carousel .owl-nav .custom-next-arrow:hover {
+  background-color: #f5f5f5;
+  color: #000;
+  border-color: #ccc;
+  transform: scale(1.1);
 }/*# sourceMappingURL=theme.css.map */
