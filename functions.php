@@ -375,4 +375,7 @@ function theme_stylescript() {
 }
 add_action('wp_enqueue_scripts', 'theme_stylescript');
 
+
+add_theme_support( 'woocommerce' );
+
 add_filter('woocommerce_template_debug_mode', '__return_true');
