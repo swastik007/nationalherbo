@@ -8,16 +8,12 @@
 ?>
 
 	<main id="primary" class="site-main">
-        
-
-        <!-- header section here -->
-         <?php get_header(); ?>
-       
     <!-- banner section area -->
-    <?php get_template_part( 'template-parts/banner-section', 'none' ); ?>
-        <!-- top-banner section area -->
-        <?php get_template_part( 'template-parts/top-banner', 'none' ); ?>
-        <!-- top-banner section area --> 
+    <?php get_template_part( 'template-parts/top-banner', 'none' ); ?>
+    <!-- banner section area -->
+
+    <?php get_header(); ?>
+
     <!-- about section area -->
     <?php get_template_part( 'template-parts/about-section', 'none' ); ?>
     <!-- about section area -->

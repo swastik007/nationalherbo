@@ -11,11 +11,9 @@
   <div class="container header-container">
     <div class="logo-section">
       <a href="<?php echo esc_url(home_url('/')); ?>">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo('name'); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/national-herbo.png" alt="<?php bloginfo('name'); ?>">
       </a>
-      <p class="subtitle">Pvt. Ltd.</p>
     </div>
-
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
