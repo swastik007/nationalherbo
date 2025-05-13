@@ -129,7 +129,6 @@ a {
   padding: 0.5rem 1rem;
   display: block;
   white-space: nowrap;
-  color: #fff;
 }
 .main-header .main-nav .menu li:hover > ul {
   display: block;
