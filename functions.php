@@ -353,6 +353,10 @@ function theme_stylescript() {
     wp_enqueue_style( 'owl_theme_css', get_template_directory_uri() . '/assets/vendor/owl/owl.theme.default.css' );
     wp_enqueue_style( 'owlcarousel_css', get_template_directory_uri() . '/assets/vendor/owl/owl.carousel.min.css' );
 
+	// Fotnawesome icons
+	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' );
+  	wp_enqueue_style( 'line-awesome', 'https://cdn.lineicons.com/3.0/lineicons.css' );
+
     // Your Custom CSS
     wp_enqueue_style( 'nationalherbo_css', get_template_directory_uri() . '/assets/css/theme.css', array(), '1.0' );
 
