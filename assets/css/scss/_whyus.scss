@@ -1,0 +1,124 @@
+.whyus-section {
+  background-color: #f9f9f9;
+
+  .serBox {
+    --color1: #333;
+    --color2: #ddd;
+
+    color: var(--color1);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 20px 20px 40px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &::before {
+      content: "";
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1), 0 20px 0 var(--color1);
+      position: absolute;
+      left: 0;
+      top: 53px;
+      right: 0;
+      bottom: 20px;
+      z-index: -1;
+    }
+
+    .ser-icon {
+      background: #fff;
+      font-size: 35px;
+      line-height: 80px;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        top: -12px;
+        left: -12px;
+        right: -12px;
+        bottom: -12px;
+        z-index: -1;
+      }
+
+      &::before {
+        background: linear-gradient(to top, transparent 49%, var(--color1) 50%);
+      }
+
+      &::after {
+        background: var(--color2);
+        height: 12px;
+        width: 150px;
+        border-radius: 0;
+        transform: translateX(-50%);
+        top: 29px;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+        z-index: -2;
+      }
+
+      span {
+        display: inline-block;
+        color: var(--color1);
+      }
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 0 10px;
+      color: var(--color1);
+    }
+
+    .description {
+      color: #666;
+      font-size: 13px;
+      line-height: 23px;
+    }
+
+    &.orang {
+      --color1: #fe6b02;
+      --color2: #f78f40;
+    }
+
+    &.blue {
+      --color1: #272171;
+      --color2: #64639f;
+    }
+
+    &.yellow {
+      --color1: #ffb103;
+      --color2: #f1c149;
+    }
+
+    &.magenta {
+      --color1: #e51f47;
+      --color2: #da617a;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .serBox {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .serBox {
+      padding: 15px;
+    }
+  }
+}

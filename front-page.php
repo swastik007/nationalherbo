@@ -20,6 +20,10 @@
     <?php get_template_part( 'template-parts/about-section', 'none' ); ?>
     <!-- about section area -->
     
+    <!-- why us section area -->
+    <?php get_template_part( 'template-parts/whyus', 'none' ); ?>
+    <!-- why us section area -->
+
     <!-- customer section area -->
     <?php get_template_part( 'template-parts/customer', 'none' ); ?>
     <!-- customer section area -->
