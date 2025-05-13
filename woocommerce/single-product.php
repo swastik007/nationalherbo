@@ -2,6 +2,8 @@
 defined('ABSPATH') || exit;
 get_header('shop');
 
+echo '<h1 style="color: red;">This is the custom product template from the theme!</h1>';
+
 if (have_posts()) :
     while (have_posts()) : the_post();
 

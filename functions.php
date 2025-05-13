@@ -375,7 +375,12 @@ function theme_stylescript() {
 }
 add_action('wp_enqueue_scripts', 'theme_stylescript');
 
+add_action('after_setup_theme', function() {
+    add_theme_support('woocommerce');
+});
 
-add_theme_support( 'woocommerce' );
-
-add_filter('woocommerce_template_debug_mode', '__return_true');
+add_action('template_redirect', function() {
+    if (is_product()) {
+        echo '<!-- Current template: ' . get_single_template() . ' -->';
+    }
+});
