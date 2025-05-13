@@ -1,42 +1,37 @@
 <?php
-echo '
-<div class="bg-purple-600 text-white py-3">
-    <div class="max-w-7xl mx-auto flex justify-center space-x-8 text-sm font-semibold tracking-wider uppercase">
-        <div class="group relative">
-            <a href="#" class="hover:underline">Brands</a>
-            <!-- Dropdown -->
-            <div class="absolute hidden group-hover:block bg-white text-black mt-2 shadow-lg rounded">
-                <a href="#" class="block px-4 py-2 hover:bg-gray-200">Brand A</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-200">Brand B</a>
-            </div>
-        </div>
+// Get all product categories (only parent categories, you can remove 'parent' => 0 if you want all)
+$product_categories = get_terms(array(
+    'taxonomy'   => 'product_cat',
+    'hide_empty' => false,
+    'parent'     => 0, // set to 0 to get only top-level categories
+));
 
-        <div class="group relative">
-            <a href="#" class="hover:underline">Skin</a>
-            <div class="absolute hidden group-hover:block bg-white text-black mt-2 shadow-lg rounded">
-                <a href="#" class="block px-4 py-2 hover:bg-gray-200">Moisturizer</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-200">Sunscreen</a>
-            </div>
-        </div>
-
-        <div class="group relative">
-            <a href="#" class="hover:underline">Hair</a>
-            <div class="absolute hidden group-hover:block bg-white text-black mt-2 shadow-lg rounded">
-                <a href="#" class="block px-4 py-2 hover:bg-gray-200">Shampoo</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-200">Hair Oil</a>
-            </div>
-        </div>
-
-        <div>
-            <a href="#" class="hover:underline">Makeup</a>
-        </div>
-        <div>
-            <a href="#" class="hover:underline">Dermat Tested</a>
-        </div>
-        <div>
-            <a href="#" class="hover:underline">Summer Essentials</a>
+if (!empty($product_categories) && !is_wp_error($product_categories)) : ?>
+    <div class="container my-5">
+        <div class="row">
+            <?php foreach ($product_categories as $category) :
+                // Get thumbnail ID for the category
+                $thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
+                // Get the image URL
+                $image_url = wp_get_attachment_url($thumbnail_id);
+                // Fallback image if no thumbnail is set
+                if (!$image_url) {
+                    $image_url = 'https://via.placeholder.com/300x200?text=No+Image';
+                }
+                // Get category link
+                $category_link = get_term_link($category);
+                ?>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="<?php echo esc_url($category_link); ?>" class="text-decoration-none text-dark">
+                        <div class="card h-100 shadow-sm">
+                            <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="<?php echo esc_attr($category->name); ?>">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><?php echo esc_html($category->name); ?></h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
-</div>
-';
-?>
+<?php endif; ?>
