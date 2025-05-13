@@ -3,6 +3,6 @@ jQuery(document).ready(function($){
         loop:true,
         margin:10,
         nav:true,
-        items: 1,
+        items: 3,
     });
 });

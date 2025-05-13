@@ -7,14 +7,8 @@
 </head>
 <body <?php body_class(); ?>>
 
-<header class="main-header">
-  <div class="container header-container">
-    <div class="logo-section">
-      <a href="<?php echo esc_url(home_url('/')); ?>">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo('name'); ?>">
-      </a>
-      <p class="subtitle">Pvt. Ltd.</p>
-    </div>
+	<header id="masthead" class="site-header">
+		<img src="<?php bloginfo('template_directory'); ?>/assets/images/national-herbo.png" alt="Border" style="height: 50px;">
 
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
