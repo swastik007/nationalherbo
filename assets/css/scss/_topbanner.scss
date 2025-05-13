@@ -1,0 +1,17 @@
+.topbar {
+  background-color: $primary;
+  color: white;
+
+  .icon {
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+      display: block;
+    }
+  }
+
+  li {
+    font-size: 0.9rem;
+  }
+}

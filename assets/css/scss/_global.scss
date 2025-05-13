@@ -1,1 +1,21 @@
-$primary : darkblue;
+$primary: #00a651;
+$secondary: #fccf03;
+
+.btn {
+  background-color: $primary;
+  color: #fff;
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $secondary;
+    color: #fff;
+  }
+}
+a {
+  color: #fff;
+}
