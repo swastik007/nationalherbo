@@ -35,6 +35,7 @@
         <?php get_template_part( 'template-parts/product-section', 'none' ); ?>     
     <!-- banner section area -->
     <?php get_template_part( 'template-parts/video-section', 'none' ); ?>     
+     <?php get_template_part( 'template-parts/category-tea-section', 'none' ); ?> 
 	</main><!-- #main -->
 
 <?php

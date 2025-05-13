@@ -1,18 +1,23 @@
 <?php
-// WP_Query to get 10 recent WooCommerce products
-$args = array(
+// Query products from the 'tea' category
+$tea_products = new WP_Query(array(
     'post_type'      => 'product',
     'posts_per_page' => 10,
     'post_status'    => 'publish',
-);
+    'tax_query'      => array(
+        array(
+            'taxonomy' => 'product_cat',
+            'field'    => 'slug',
+            'terms'    => 'tea', // Make sure the slug is correct
+        ),
+    ),
+));
 
-$recent_products = new WP_Query($args);
-
-if ($recent_products->have_posts()) : ?>
+if ($tea_products->have_posts()) : ?>
     <div class="container my-5">
-        <h3 class="mb-4 text-center">Latest Products Section</h3>
+        <h3 class="mb-4 text-center">Tea Collection</h3>
         <div class="owl-carousel owl-theme">
-            <?php while ($recent_products->have_posts()) : $recent_products->the_post();
+            <?php while ($tea_products->have_posts()) : $tea_products->the_post();
                 global $product;
                 ?>
                 <div class="item">
