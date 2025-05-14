@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+body {
+  font-family: "Figtree", sans-serif;
+}
+
 .btn {
   background-color: #00a651;
   color: #fff;
@@ -255,7 +260,7 @@ a {
   height: auto;
 }
 .promo-banner .img1 img {
-  height: 15aaaaaaaaaaaaaaarem;
+  height: 15rem;
   width: 100%;
 }
 .promo-banner .img2 {

@@ -8,7 +8,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package National_herbo
+ * @package National_Herbo
  */
 
 /**
