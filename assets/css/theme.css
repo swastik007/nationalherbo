@@ -1,18 +1,63 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@font-face {
+  font-family: "Astrid";
+  src: url("../../fonts/Astrid.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Astrid";
+  src: url("../../fonts/Astrid.woff") format("woff");
+  font-weight: 700;
+}
 body {
   font-family: "Figtree", sans-serif;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+a,
+button,
+ul,
+li {
+  font-family: "Figtree", sans-serif;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #000;
+}
+
+h3 {
+  font-family: "Astrid", serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .btn {
   background-color: #00a651;
   color: #fff;
-  display: block;
+  display: inline-block;
   margin-top: 1rem;
   text-align: center;
   padding: 0.7rem 1.2rem;
   border-radius: 5px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 .btn:hover {
   background-color: #fccf03;
@@ -20,15 +65,20 @@ body {
 }
 
 a {
-  color: #fff;
+  text-decoration: none;
+  color: #00a651;
+}
+a:hover {
+  color: #fccf03;
 }
 
 .main-header {
   background-color: #eaeaea;
-  border-top: 3px solid green;
+  border-top: 3px solid #00a651;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   padding: 0.8rem 0;
   position: relative;
+  font-family: "Figtree", sans-serif;
 }
 .main-header .header-container {
   display: flex;
@@ -49,6 +99,7 @@ a {
   font-size: 0.85rem;
   margin: 0;
   color: #444;
+  font-family: "Figtree", sans-serif;
 }
 .main-header .nav-toggle {
   display: none;
@@ -112,6 +163,8 @@ a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
+  font-family: "Figtree", sans-serif;
+  transition: color 0.3s ease;
 }
 .main-header .main-nav .menu li a.current-menu-item, .main-header .main-nav .menu li a:hover {
   color: #fccf03;
@@ -157,6 +210,9 @@ a {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.main-header .header-right .btn {
+  font-family: "Figtree", sans-serif;
 }
 @media (max-width: 768px) {
   .main-header .header-right .btn {
