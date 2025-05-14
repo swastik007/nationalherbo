@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 $primary: #00a651;
 $secondary: #fccf03;
-
+body{
+  font-family: "Figtree", sans-serif;
+}
 .btn {
   background-color: $primary;
   color: #fff;

@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package National_herbo
+ * @package National_Herbo
  */
 
 if ( ! function_exists( 'national_herbo_posted_on' ) ) :

@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package National_herbo
+ * @package National_Herbo
  */
 
 /**

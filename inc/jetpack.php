@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package National_herbo
+ * @package National_Herbo
  */
 
 /**

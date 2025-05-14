@@ -21,7 +21,7 @@ if (!empty($product_categories) && !is_wp_error($product_categories)) : ?>
                 // Get category link
                 $category_link = get_term_link($category);
                 ?>
-                <div class="col-md-4 col-sm-6 mb-4">
+                <div class="col-md-1 col-sm-3 mb-4">
                     <a href="<?php echo esc_url($category_link); ?>" class="text-decoration-none text-dark">
                         <div class="card h-100 shadow-sm">
                             <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="<?php echo esc_attr($category->name); ?>">

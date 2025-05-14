@@ -1,8 +1,8 @@
 <?php
 /**
- * National herbo Theme Customizer
+ * National Herbo Theme Customizer
  *
- * @package National_herbo
+ * @package National_Herbo
  */
 
 /**

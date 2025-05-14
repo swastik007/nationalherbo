@@ -1,6 +1,4 @@
-<!-- <img src="<?php bloginfo('template_directory'); ?>/assets/images/banner002.png" alt="Border"> -->
-
-
+<div class="container">
 <div class="simple-banner">
   <div class="image-card">
     <img src="<?php bloginfo('template_directory'); ?>/assets/images/banner001.png" alt="Main Promo">
@@ -13,4 +11,5 @@
       <img src="<?php bloginfo('template_directory'); ?>/assets/images/banner003.png" alt="Promo Right Bottom">
     </div>
   </div>
+</div>
 </div>

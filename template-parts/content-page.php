@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package National_herbo
+ * @package National_Herbo
  */
 
 ?>
