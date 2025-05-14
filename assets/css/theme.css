@@ -245,8 +245,7 @@ a:hover {
 .simple-banner {
   display: flex;
   gap: 10px;
-  background: #f7f7f7;
-  padding: 15px;
+  padding-top: 15px;
   align-items: stretch;
 }
 .simple-banner .image-card {
@@ -309,23 +308,24 @@ a:hover {
   display: flex;
   gap: 10px;
   padding: 12px;
-  margin: 3rem 6rem;
 }
 .promo-banner .img1 {
   width: 50%;
   height: auto;
 }
 .promo-banner .img1 img {
-  height: 15aaaaaaaaaaaaaaarem;
+  height: 100%;
   width: 100%;
+  border-radius: 8px;
 }
 .promo-banner .img2 {
   width: 50%;
   height: auto;
 }
 .promo-banner .img2 img {
-  height: 15rem;
+  height: 100%;
   width: 100%;
+  border-radius: 8px;
 }
 
 .footer {
@@ -723,8 +723,7 @@ a:hover {
 .simple-banner {
   display: flex;
   gap: 10px;
-  background: #f7f7f7;
-  padding: 15px;
+  padding-top: 15px;
   align-items: stretch;
 }
 .simple-banner .image-card {
@@ -780,5 +779,96 @@ a:hover {
   }
   .simple-banner .image-column .image-half img {
     height: auto;
+  }
+}
+
+.category-icons-section {
+  background-color: #f8f9fa;
+}
+.category-icons-section .section-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.category-icons-section .section-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+}
+.category-icons-section .category-icon-card {
+  transition: transform 0.3s ease;
+}
+.category-icons-section .category-icon-card:hover {
+  transform: translateY(-5px);
+}
+.category-icons-section .category-icon-card .category-image-wrapper {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category-icons-section .category-icon-card .category-image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.category-icons-section .category-icon-card .category-title {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  color: #222;
+}
+
+.herbal-hero {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.herbal-hero .hero-content {
+  max-width: 800px;
+  padding: 30px;
+  margin-right: 500px;
+  border-radius: 12px;
+}
+.herbal-hero .hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #e6f9e6;
+}
+.herbal-hero .hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.herbal-hero .hero-content .cta-button {
+  display: inline-block;
+  background-color: #8bc34a;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.herbal-hero .hero-content .cta-button:hover {
+  background-color: #689f38;
+}
+@media (max-width: 768px) {
+  .herbal-hero .hero-content h1 {
+    font-size: 2rem;
+  }
+  .herbal-hero .hero-content p {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=theme.css.map */
