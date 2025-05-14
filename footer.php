@@ -11,12 +11,12 @@
   <div class="container">
     <div class="row g-4">
       <div class="col-md-6 col-lg-3">
-        <h5 class="mb-3 text-warning">Delhi Head Office</h5>
-        <p>D2/2 - 2nd Floor, Yadav Nagar, Delhi - 110042<br>Near Samay Puri Badli Metro Station</p>
+        <h5 class="mb-3 text-warning">Head Office</h5>
+        <p>D2/2 - 2nd Floor, Sorakhutte <br> Kathmandu, Nepal</p>
       </div>
       <div class="col-md-6 col-lg-3">
-        <h5 class="mb-3 text-warning">Registered Office</h5>
-        <p>Plot no 1529, RAI Industrial Area,<br>Sonipat, Haryana - 131001</p>
+        <h5 class="mb-3 text-warning">Sub Office</h5>
+        <p>Kupondole-2<br>Lalitpur, Nepal</p>
       </div>
       <div class="col-md-6 col-lg-3">
         <h5 class="mb-3 text-warning">Phone Number</h5>
@@ -27,8 +27,14 @@
       <div class="col-md-6 col-lg-3">
         <h5 class="mb-3 text-white">Locate Us</h5>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112099.88212095685!2d77.024766278125!3d28.7522061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0146cfbf3cc1%3A0x1234567890abcdef!2sNational%20Herbo!5e0!3m2!1sen!2sin!4v1715599999999"
-          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.234567890123!2d85.30936!3d27.71866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190123456789%3A0xabcdef1234567890!2sSorakhutte%2C%20Kathmandu%2C%20Nepal!5e0!3m2!1sen!2snp!4v1715600000000"
+          width="100%"
+          height="200"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
 
@@ -70,7 +76,7 @@
     </div>
 
     <div class="text-center mt-4">
-      <small>© 2025 Copyrights by <span class="text-warning">National Herbo</span>. All Rights Reserved.</small>
+      <p class="para text-white">© 2025 Copyrights by <span class="text-warning">National Herbo</span>. All Rights Reserved.</p>
     </div>
   </div>
 </footer>
