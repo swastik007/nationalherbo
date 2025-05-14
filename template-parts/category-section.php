@@ -1,37 +1,36 @@
 <?php
-// Get all product categories (only parent categories, you can remove 'parent' => 0 if you want all)
 $product_categories = get_terms(array(
     'taxonomy'   => 'product_cat',
     'hide_empty' => false,
-    'parent'     => 0, // set to 0 to get only top-level categories
+    'parent'     => 0,
 ));
 
 if (!empty($product_categories) && !is_wp_error($product_categories)) : ?>
-    <div class="container my-5">
-        <div class="row">
-            <?php foreach ($product_categories as $category) :
-                // Get thumbnail ID for the category
-                $thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
-                // Get the image URL
-                $image_url = wp_get_attachment_url($thumbnail_id);
-                // Fallback image if no thumbnail is set
-                if (!$image_url) {
-                    $image_url = 'https://via.placeholder.com/300x200?text=No+Image';
-                }
-                // Get category link
-                $category_link = get_term_link($category);
-                ?>
-                <div class="col-md-1 col-sm-3 mb-4">
-                    <a href="<?php echo esc_url($category_link); ?>" class="text-decoration-none text-dark">
-                        <div class="card h-100 shadow-sm">
-                            <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="<?php echo esc_attr($category->name); ?>">
-                            <div class="card-body text-center">
-                                <h5 class="card-title"><?php echo esc_html($category->name); ?></h5>
+    <section class="category-icons-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title fw-bold">Shop Popular Categories</h2>
+                <p class="section-subtitle text-muted">Browse our most loved product categories</p>
+            </div>
+            <div class="row justify-content-center g-4">
+                <?php foreach ($product_categories as $category) :
+                    $thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
+                    $image_url = wp_get_attachment_url($thumbnail_id);
+                    if (!$image_url) {
+                        $image_url = 'https://via.placeholder.com/150x150?text=No+Image';
+                    }
+                    $category_link = get_term_link($category);
+                    ?>
+                    <div class="col-6 col-sm-4 col-md-2 text-center">
+                        <a href="<?php echo esc_url($category_link); ?>" class="text-decoration-none text-dark category-icon-card d-block">
+                            <div class="category-image-wrapper mx-auto mb-2">
+                                <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($category->name); ?>">
                             </div>
-                        </div>
-                    </a>
-                </div>
-            <?php endforeach; ?>
+                            <div class="category-title fw-semibold"><?php echo esc_html($category->name); ?></div>
+                        </a>
+                    </div>
+                <?php endforeach; ?>
+            </div>
         </div>
-    </div>
+    </section>
 <?php endif; ?>
