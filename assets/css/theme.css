@@ -422,6 +422,15 @@ a:hover {
 .about-section {
   background-color: #fdfdfd;
 }
+.about-section .about-header .logo {
+  width: 311px;
+  display: flex;
+  justify-content: center;
+}
+.about-section .about-header .logo img {
+  height: 50px;
+  width: auto;
+}
 .about-section img {
   border-radius: 0.75rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -639,6 +648,10 @@ a:hover {
   color: #f7941d;
 }
 
+.product-carousel-section .section-header img {
+  height: 50px;
+  width: auto;
+}
 .product-carousel-section .product-card {
   height: 350px;
   display: flex;
@@ -785,6 +798,10 @@ a:hover {
 .category-icons-section {
   background-color: #f8f9fa;
 }
+.category-icons-section img {
+  height: 50px;
+  width: auto;
+}
 .category-icons-section .section-title {
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
@@ -850,19 +867,6 @@ a:hover {
 .herbal-hero .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-}
-.herbal-hero .hero-content .cta-button {
-  display: inline-block;
-  background-color: #8bc34a;
-  color: #fff;
-  padding: 12px 30px;
-  font-size: 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-.herbal-hero .hero-content .cta-button:hover {
-  background-color: #689f38;
 }
 @media (max-width: 768px) {
   .herbal-hero .hero-content h1 {

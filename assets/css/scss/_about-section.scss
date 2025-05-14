@@ -1,5 +1,18 @@
 .about-section {
   background-color: #fdfdfd;
+  
+  .about-header{
+    .logo{
+      width: 311px;
+      display: flex;
+      justify-content: center;
+      img {
+      height: 50px;
+      width: auto;
+    }
+
+    }
+  }
 
   img {
     border-radius: 0.75rem;
