@@ -1,25 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
+// Font Face for Astrid
+@font-face {
+  font-family: "Astrid";
+  src: url("../../fonts/Astrid.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Astrid";
+  src: url("../../fonts/Astrid.woff") format("woff");
+  font-weight: 700;
+}
+
+// Color Variables
 $primary: #00a651;
 $secondary: #fccf03;
-body{
+$text-color: #000;
+
+// Base Typography
+body {
   font-family: "Figtree", sans-serif;
+  font-size: 20px;
+  color: $text-color;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
+
+p,
+a,
+button,
+ul,
+li {
+  font-family: "Figtree", sans-serif;
+  font-size: 20px;
+  // color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $text-color;
+}
+
+h3 {
+  font-family: "Astrid", serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Cormorant Garamond", serif; // Closest match to Astrid via Google Fonts
+  font-size: 24px;
+  font-weight: 600;
+}
+
+// Buttons
 .btn {
   background-color: $primary;
   color: #fff;
-  display: block;
+  display: inline-block;
   margin-top: 1rem;
   text-align: center;
   padding: 0.7rem 1.2rem;
   border-radius: 5px;
   text-decoration: none;
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: $secondary;
     color: #fff;
   }
 }
+
+// Links
 a {
-  color: #fff;
+  text-decoration: none;
+  color: $primary;
+
+  &:hover {
+    color: $secondary;
+  }
 }
