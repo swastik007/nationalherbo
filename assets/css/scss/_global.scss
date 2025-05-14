@@ -21,7 +21,6 @@ $text-color: #000;
 // Base Typography
 body {
   font-family: "Figtree", sans-serif;
-  font-size: 20px;
   color: $text-color;
   line-height: 1.6;
   margin: 0;
@@ -36,6 +35,7 @@ li {
   font-family: "Figtree", sans-serif;
   font-size: 20px;
   // color: $text-color;
+  font-weight: 400;
 }
 
 h1,
@@ -43,21 +43,23 @@ h2,
 h3,
 h4,
 h5 {
-  color: $text-color;
-}
-
-h3 {
-  font-family: "Astrid", serif;
-  font-size: 32px;
+  font-family: Astrid;
   font-weight: 700;
+  font-size: 28px;
 }
 
 h4 {
-  font-family: "Cormorant Garamond", serif; // Closest match to Astrid via Google Fonts
+  font-family: "Cormorant Garamond", serif;
   font-size: 24px;
   font-weight: 600;
 }
 
+.para {
+  font-family: "Figtree", sans-serif;
+  font-size: 18px;
+  color: $text-color;
+  font-weight: 300;
+}
 // Buttons
 .btn {
   background-color: $primary;
@@ -84,4 +86,19 @@ a {
   &:hover {
     color: $secondary;
   }
+}
+
+.section-title {
+  font-family: Astrid;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 0.5rem;
+  color: $primary;
+}
+
+.section-subtitle {
+  font-family: "Figtree", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: #000;
 }

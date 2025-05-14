@@ -28,8 +28,8 @@ if ($recent_products->have_posts()) : ?>
                                 <?php endif; ?>
                             </a>
                             <div class="product-info-box shadow-sm p-3 rounded bg-white">
-                                <h6 class="product-title fw-bold mb-1"><?php the_title(); ?></h6>
-                                <div class="product-price text-muted"><?php echo $product->get_price_html(); ?></div>
+                                <h4 class="product-title mb-1"><?php the_title(); ?></h4>
+                                <p class="product-price"><?php echo $product->get_price_html(); ?></p>
                             </div>
                         </div>
                     </div>

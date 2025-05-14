@@ -30,13 +30,15 @@
    
     <?php get_template_part( 'template-parts/category-tea-section', 'none' ); ?> 
     <!-- products display section area --> 
+
+    <!-- full banner section area -->
+    <?php get_template_part( 'template-parts/full-banner', 'none' ); ?>
+    <!-- full banner section area -->
+     
     <!-- why us section area -->
     <?php get_template_part( 'template-parts/whyus', 'none' ); ?>
     <!-- why us section area -->
 
-    <!-- promo banner section area -->
-    <?php get_template_part( 'template-parts/full-banner', 'none' ); ?>
-    <!-- promo banner section area -->
 
     <!-- customer section area -->
     <?php get_template_part( 'template-parts/customer', 'none' ); ?>

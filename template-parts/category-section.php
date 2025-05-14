@@ -9,8 +9,8 @@ if (!empty($product_categories) && !is_wp_error($product_categories)) : ?>
     <section class="category-icons-section py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title fw-bold">Shop Popular Categories</h2>
-                <p class="section-subtitle text-muted">Browse our most loved product categories</p>
+                <h2 class="section-title">Shop Popular Categories</h2>
+                <p class="section-subtitle">Browse our most loved product categories</p>
             </div>
             <div class="row justify-content-center g-4">
                 <?php foreach ($product_categories as $category) :

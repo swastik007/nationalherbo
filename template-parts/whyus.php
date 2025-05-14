@@ -12,7 +12,7 @@
             <i class="fas fa-seedling"></i>
           </div>
           <h3 class="title">Premium Quality</h3>
-          <p class="description">
+          <p class="para">
             Our products use the highest quality ingredients and undergo rigorous testing.
           </p>
           <a href="#" class="read-more">Read More <span>➜</span></a>
@@ -25,7 +25,7 @@
         <i class="fas fa-flask"></i>
       </div>
       <h3 class="title">Scientifically Formulated</h3>
-      <p class="description">
+      <p class="para">
         Developed by health experts with research-backed formulations.
       </p>
       <a href="#" class="read-more">Read More <span>➜</span></a>
@@ -38,7 +38,7 @@
         <i class="fas fa-recycle"></i>
       </div>
       <h3 class="title">Eco Packaging</h3>
-      <p class="description">
+      <p class="para">
         We care about the Earth — our packaging is sustainable and eco-friendly.
       </p>
       <a href="#" class="read-more">Read More <span>➜</span></a>

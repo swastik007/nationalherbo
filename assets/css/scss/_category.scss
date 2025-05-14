@@ -1,15 +1,5 @@
 .category-icons-section {
-  background-color: #f8f9fa;
-
-  .section-title {
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .section-subtitle {
-    font-size: 1rem;
-    color: #6c757d;
-  }
+  background: linear-gradient(135deg, #8ec58e, #ffffff);
 
   .category-icon-card {
     transition: transform 0.3s ease;
@@ -37,7 +27,8 @@
     }
 
     .category-title {
-      font-size: 0.95rem;
+      font-family: "Figtree", sans-serif;
+      font-weight: 700;
       margin-top: 0.5rem;
       color: #222;
     }
