@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
       <div class="col-12 col-lg-6 col-xl-5">
-        <img class="img-fluid rounded" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-national-herbs.jpg" alt="About National Herbs">
+        <img class="img-fluid rounded" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/banner001.png" alt="About National Herbs">
       </div>
       <div class="col-12 col-lg-6 col-xl-7">
         <div class="row justify-content-xl-center">
@@ -13,9 +13,12 @@
             </div>
             <h2 class="mb-3">About National Herbs</h2>
             <p class="lead fs-4 text-secondary mb-3">
+          <div class="col-12 col-xl-11">
+            <h2 class="section-title mb-3">About National Herbs</h2>
+            <p class="para mb-3">
               National Herbs is committed to delivering authentic, natural wellness products rooted in tradition and backed by science.
             </p>
-            <p class="mb-5">
+            <p class="para mb-5">
               We source and craft premium herbal supplements, teas, and remedies using age-old herbal knowledge. Our mission is to make holistic health accessible, sustainable, and effective for every individual seeking natural solutions.
             </p>
             <div class="row gy-4 gy-md-0 gx-xxl-5">
@@ -30,8 +33,8 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 class="h5 mb-2">Rooted in Nature</h3>
-                    <p class="text-secondary mb-0">We use ethically sourced herbs and sustainable farming methods to bring nature’s best to you.</p>
+                    <h4 class="mb-2">Rooted in Nature</h4>
+                    <p class="para mb-0">We use ethically sourced herbs and sustainable farming methods to bring nature’s best to you.</p>
                   </div>
                 </div>
               </div>
@@ -41,8 +44,8 @@
                     <i class="bi bi-heart-pulse-fill fs-2"></i>
                   </div>
                   <div>
-                    <h3 class="h5 mb-2">Holistic Wellness</h3>
-                    <p class="text-secondary mb-0">Our formulations support mind, body, and soul — naturally and effectively.</p>
+                    <h4 class="mb-2">Holistic Wellness</h4>
+                    <p class="para mb-0">Our formulations support mind, body, and soul — naturally and effectively.</p>
                   </div>
                 </div>
               </div>
