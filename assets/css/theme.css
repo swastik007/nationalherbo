@@ -487,62 +487,100 @@ a {
 }
 
 .whyus-section {
-  background: #f9f9f9;
-  padding: 60px 0;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.whyus-section .container {
+  position: relative;
+  z-index: 2;
 }
 .whyus-section .section-header .section-title {
-  font-size: 32px;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #222;
-  margin-bottom: 10px;
+  color: #034d1a;
 }
 .whyus-section .section-header .section-subtitle {
-  font-size: 16px;
-  color: #666;
+  font-size: 1rem;
+  color: #555;
+}
+.whyus-section .green-bottom-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 55%;
+  width: 100%;
+  background-color: #034d1a;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  z-index: 1;
 }
 .whyus-section .whyus-card {
   background: #fff;
+  border-radius: 20px;
   padding: 30px 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  transition: all 0.4s ease;
   height: 100%;
 }
 .whyus-section .whyus-card:hover {
-  transform: translateY(-5px);
+  transform: rotateZ(-1deg) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 77, 26, 0.2);
+}
+.whyus-section .whyus-card .img-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 6px solid #f7941d;
+}
+.whyus-section .whyus-card .img-circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.whyus-section .whyus-card .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #00a651;
+}
+.whyus-section .whyus-card .description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+.whyus-section .whyus-card .read-more {
+  font-weight: 600;
+  color: #034d1a;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+.whyus-section .whyus-card .read-more:hover {
+  color: #f7941d;
+}
+.whyus-section .whyus-card .read-more span {
+  font-size: 1.1rem;
 }
 .whyus-section .whyus-card .icon-wrapper {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  color: #fff;
+  background-color: #fff;
 }
-.whyus-section .whyus-card .icon-wrapper.orange {
-  background-color: #fe6b02;
-}
-.whyus-section .whyus-card .icon-wrapper.blue {
-  background-color: #272171;
-}
-.whyus-section .whyus-card .icon-wrapper.yellow {
-  background-color: #ffb103;
-}
-.whyus-section .whyus-card .icon-wrapper.red {
-  background-color: #e51f47;
-}
-.whyus-section .whyus-card .title {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #222;
-}
-.whyus-section .whyus-card .description {
-  font-size: 14px;
-  color: #666;
+.whyus-section .whyus-card .icon-wrapper i {
+  font-size: 2.5rem;
+  color: #f7941d;
 }
 
 .product-carousel-section .product-card {
