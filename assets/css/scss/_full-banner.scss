@@ -1,0 +1,59 @@
+.herbal-hero {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: #ffffff;
+  text-align: center;
+
+  .hero-content {
+    max-width: 800px;
+    // background: rgba(0, 0, 0, 0.3); // optional semi-transparent overlay
+    padding: 30px;
+    margin-right: 500px;
+    border-radius: 12px;
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #e6f9e6;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #8bc34a;
+      color: #fff;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #689f38;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

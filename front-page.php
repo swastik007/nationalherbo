@@ -35,7 +35,7 @@
     <!-- why us section area -->
 
     <!-- promo banner section area -->
-    <?php get_template_part( 'template-parts/promo-banner', 'none' ); ?>
+    <?php get_template_part( 'template-parts/full-banner', 'none' ); ?>
     <!-- promo banner section area -->
 
     <!-- customer section area -->

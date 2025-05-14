@@ -189,8 +189,7 @@ a {
 .simple-banner {
   display: flex;
   gap: 10px;
-  background: #f7f7f7;
-  padding: 15px;
+  padding-top: 15px;
   align-items: stretch;
 }
 .simple-banner .image-card {
@@ -253,23 +252,24 @@ a {
   display: flex;
   gap: 10px;
   padding: 12px;
-  margin: 3rem 6rem;
 }
 .promo-banner .img1 {
   width: 50%;
   height: auto;
 }
 .promo-banner .img1 img {
-  height: 15rem;
+  height: 100%;
   width: 100%;
+  border-radius: 8px;
 }
 .promo-banner .img2 {
   width: 50%;
   height: auto;
 }
 .promo-banner .img2 img {
-  height: 15rem;
+  height: 100%;
   width: 100%;
+  border-radius: 8px;
 }
 
 .footer {
@@ -624,4 +624,54 @@ a {
   color: #000;
   border-color: #ccc;
   transform: scale(1.1);
+}
+
+.herbal-hero {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.herbal-hero .hero-content {
+  max-width: 800px;
+  padding: 30px;
+  margin-right: 500px;
+  border-radius: 12px;
+}
+.herbal-hero .hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #e6f9e6;
+}
+.herbal-hero .hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.herbal-hero .hero-content .cta-button {
+  display: inline-block;
+  background-color: #8bc34a;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.herbal-hero .hero-content .cta-button:hover {
+  background-color: #689f38;
+}
+@media (max-width: 768px) {
+  .herbal-hero .hero-content h1 {
+    font-size: 2rem;
+  }
+  .herbal-hero .hero-content p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=theme.css.map */
