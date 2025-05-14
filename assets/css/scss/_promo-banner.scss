@@ -1,0 +1,24 @@
+.promo-banner{
+    display:flex;
+    padding: 12px;
+    margin: 24px;
+
+    .img1{
+        width: 50%;
+        height: auto;
+        
+        img {
+            height: 10rem;
+            width: 100%;
+        }
+    }
+    .img2{
+        width: 50%;
+        height: auto;
+        
+        img {
+            height: 10rem;
+            width: 100%;
+        }
+    }
+}
