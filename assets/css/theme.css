@@ -345,15 +345,16 @@ a {
 
 .promo-banner {
   display: flex;
+  gap: 10px;
   padding: 12px;
-  margin: 24px;
+  margin: 3rem 6rem;
 }
 .promo-banner .img1 {
   width: 50%;
   height: auto;
 }
 .promo-banner .img1 img {
-  height: 10rem;
+  height: 15aaaaaaaaaaaaaaarem;
   width: 100%;
 }
 .promo-banner .img2 {
@@ -361,6 +362,6 @@ a {
   height: auto;
 }
 .promo-banner .img2 img {
-  height: 10rem;
+  height: 15rem;
   width: 100%;
 }/*# sourceMappingURL=theme.css.map */
