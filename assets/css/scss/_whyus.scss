@@ -2,13 +2,7 @@
   position: relative;
   background: #fff;
   overflow: hidden;
-  padding-top: 60px;
-  padding-bottom: 120px;
-
-  .container {
-    position: relative;
-    z-index: 2;
-  }
+  padding: 60px 0 120px;
 
   .green-bottom-bg {
     position: absolute;
@@ -20,48 +14,53 @@
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     z-index: 1;
+  }
 
-    // Optional background pattern
-    // background-image: url('../img/leaf-pattern.png');
-    // background-repeat: no-repeat;
-    // background-position: right bottom;
-    // background-size: cover;
+  .whyus-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+    margin: 0;
   }
 
   .whyus-card {
     background: #fff;
     border-radius: 20px;
-    padding: 30px 20px;
+    width: 260px;
+    height: 360px;
+    z-index: 2;
+    padding: 25px 20px;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
     text-align: center;
-    position: relative;
-    z-index: 3;
     transition: all 0.4s ease;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    // Hover effect - subtle rotate + glow
     &:hover {
       transform: rotateZ(-1deg) scale(1.02);
       box-shadow: 0 12px 30px rgba(0, 77, 26, 0.2);
     }
 
     .img-circle {
-      width: 120px;
-      height: 120px;
+      width: 70px;
+      height: 70px;
       border-radius: 50%;
       overflow: hidden;
-      margin: 0 auto 20px;
-      border: 6px solid #f7941d;
+      margin: 0 auto 15px;
+      border: 5px solid $primary;
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      i {
+        font-size: 1.8rem;
+        line-height: 90px;
+        color: $primary;
       }
     }
 
     .title {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 10px;
       color: $secondary;
@@ -73,6 +72,7 @@
       text-decoration: none;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 5px;
       transition: color 0.3s ease;
 
@@ -84,16 +84,12 @@
         font-size: 1.1rem;
       }
     }
+
     .icon-wrapper {
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: #fff;
-
-      i {
-        font-size: 2.5rem;
-        color: #f7941d;
-      }
     }
   }
 }
