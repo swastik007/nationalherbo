@@ -100,7 +100,7 @@ a:hover {
   align-items: flex-start;
 }
 .main-header .logo-section img {
-  height: 50px;
+  height: 80px;
   width: auto;
 }
 .main-header .logo-section .subtitle {
@@ -479,10 +479,11 @@ a:hover {
   margin: 0 auto 15px;
   border: 5px solid #00a651;
 }
-.whyus-section .whyus-card .img-circle i {
-  font-size: 1.8rem;
-  line-height: 90px;
-  color: #00a651;
+.whyus-section .whyus-card .img-circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .whyus-section .whyus-card .title {
   font-size: 1.25rem;
