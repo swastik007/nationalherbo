@@ -1,39 +1,6 @@
-.about-section {
-  background-color: #fdfdfd;
-  
-  .about-header{
-    .logo{
-      width: 311px;
-      display: flex;
-      justify-content: center;
-      img {
-      height: 50px;
-      width: auto;
-    }
-
-    }
-  }
-
+.section-header {
   img {
-    border-radius: 0.75rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  }
-
-  .lead {
-    color: #4e4e4e;
-  }
-
-  .bi {
-    color: #198754; 
-  }
-
-  .d-flex {
-    align-items: flex-start;
-  }
-  .me-4 svg {
-    width: 2rem;
-    height: 2rem;
-    color: #198754;
-    flex-shrink: 0;
+    height: 50px;
+    width: auto;
   }
 }
