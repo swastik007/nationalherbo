@@ -1,15 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
-@font-face {
-  font-family: "Astrid";
-  src: url("../../fonts/Astrid.otf") format("opentype");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Astrid";
-  src: url("../../fonts/Astrid.woff") format("woff");
-  font-weight: 700;
-}
 body {
   font-family: "Figtree", sans-serif;
   color: #000;
@@ -33,13 +23,13 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: Astrid;
+  font-family: "Figtree", sans-serif;
   font-weight: 700;
   font-size: 28px;
 }
 
 h4 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Figtree", sans-serif;
   font-size: 24px;
   font-weight: 600;
 }
@@ -350,25 +340,33 @@ a:hover {
   background-color: #111;
   color: #ccc;
 }
-.footer h5,
-.footer h6 {
+.footer h3,
+.footer h4 {
   color: #fff;
+  font-size: 18px;
+}
+.footer p {
+  color: #fff;
+  font-size: 16px;
 }
 .footer a {
   color: #ccc;
   transition: color 0.3s;
+  font-size: 16px;
 }
 .footer a:hover {
   color: #f0ad4e;
 }
 .footer ul li {
   margin-bottom: 0.5rem;
+  font-size: 16px;
 }
 .footer iframe {
   border-radius: 8px;
 }
 .footer .text-warning {
   color: #f0ad4e;
+  font-size: 18px;
 }
 
 .customer-section {
