@@ -39,28 +39,27 @@ if ($recent_products->have_posts()) : ?>
     </section>
     <script>
         jQuery(document).ready(function($) {
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 20,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true,
-            nav: true,
-            dots: false,
-            navText: [
-                '<span class="custom-prev-arrow">&#10094;</span>',  // ❮
-                '<span class="custom-next-arrow">&#10095;</span>'   // ❯
-            ],
-            responsive: {
-                0: { items: 1 },
-                576: { items: 2 },
-                768: { items: 3 },
-                992: { items: 4 },
-                1200: {items: 5}
-            }
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                nav: true,
+                dots: false,
+                navText: [
+                    '<span class="custom-prev-arrow"><i class="fas fa-chevron-left"></i></span>',
+                    '<span class="custom-next-arrow"><i class="fas fa-chevron-right"></i></span>'
+                ],
+                responsive: {
+                    0: { items: 1 },
+                    576: { items: 2 },
+                    768: { items: 3 },
+                    992: { items: 4 },
+                    1200: { items: 5 }
+                }
+            });
         });
-    });
     </script>
-
     <?php wp_reset_postdata(); ?>
 <?php endif; ?>

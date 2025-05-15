@@ -589,9 +589,7 @@ a:hover {
 }
 .owl-carousel .owl-nav .custom-prev-arrow,
 .owl-carousel .owl-nav .custom-next-arrow {
-  background: #fff;
-  border: 1px solid #ddd;
-  color: #333;
+  color: #000;
   font-size: 20px;
   width: 40px;
   height: 40px;
@@ -602,13 +600,6 @@ a:hover {
   pointer-events: auto;
   transition: all 0.3s ease;
   z-index: 10;
-}
-.owl-carousel .owl-nav .custom-prev-arrow:hover,
-.owl-carousel .owl-nav .custom-next-arrow:hover {
-  background-color: #f5f5f5;
-  color: #000;
-  border-color: #ccc;
-  transform: scale(1.1);
 }
 
 .simple-banner {

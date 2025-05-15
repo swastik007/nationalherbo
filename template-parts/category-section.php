@@ -6,8 +6,8 @@ $product_categories = get_terms(array(
 ));
 
 if (!empty($product_categories) && !is_wp_error($product_categories)) : ?>
-    <section class="category-icons-section py-5">
-        <div class="container">
+    <section class=" py-5">
+        <div class="container category-icons-section">
             <div class="text-center mb-5">
                 <h2 class="section-title">Shop Popular Categories</h2>
                 <p class="section-subtitle">Browse our most loved product categories</p>
