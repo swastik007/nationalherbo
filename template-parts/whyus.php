@@ -1,6 +1,7 @@
 <section class="whyus-section position-relative py-5">
   <div class="container position-relative z-2">
     <div class="section-header text-center mb-5">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo-icon.png" alt="icon">
       <h2 class="section-title">Why Choose National Herbo?</h2>
       <p class="section-subtitle">What sets us apart in delivering natural wellness</p>
     </div>

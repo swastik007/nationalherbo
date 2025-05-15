@@ -17,7 +17,7 @@ if ($tea_products->have_posts()) : ?>
     <section class="product-carousel-section py-5">
         <div class="container">
             <div class="section-header text-center mb-4">
-                      <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo-icon.png" alt="Promo left image">
+                      <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo-icon.png" alt="icon">
 
                 <h2 class="section-title">Tea Collection</h2>
                 <p class="section-subtitle">Discover our finest selection of teas</p>
