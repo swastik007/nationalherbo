@@ -1,5 +1,21 @@
 .category-icons-section {
-  background: linear-gradient(135deg, #8ec58e, #ffffff);
+  background: rgba(237, 221, 83, 0.08);
+  background: linear-gradient(90deg,rgba(237, 221, 83, 0.08) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(237, 221, 83, 0.09) 100%);
+
+  img {
+    height: 50px;
+    width: auto;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+  }
 
   .category-icon-card {
     transition: transform 0.3s ease;
@@ -13,7 +29,8 @@
       width: 100px;
       height: 100px;
       padding: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border: 1px solid #f2f2f2;
       display: flex;
       align-items: center;
       justify-content: center;

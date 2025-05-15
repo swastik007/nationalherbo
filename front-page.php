@@ -30,7 +30,7 @@
    
     <?php get_template_part( 'template-parts/category-tea-section', 'none' ); ?> 
     <!-- products display section area --> 
-
+    <?php get_template_part( 'template-parts/banner-full', 'none' ); ?>
     <!-- full banner section area -->
     <?php get_template_part( 'template-parts/full-banner', 'none' ); ?>
     <!-- full banner section area -->

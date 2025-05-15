@@ -1,4 +1,11 @@
 .product-carousel-section {
+
+  .section-header{
+    img {
+    height: 50px;
+    width: auto;
+  }
+  }
   .product-card {
     height: 350px; // fixed height for consistency
     display: flex;
@@ -10,7 +17,7 @@
 
   .product-image {
     width: 100%;
-    height: 180px; // fixed image height
+    height: 180px; // fixsssssssssssssssssssSsed image height
     object-fit: contain;
     border-radius: 10px;
     background-color: #fff;

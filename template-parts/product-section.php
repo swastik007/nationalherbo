@@ -11,6 +11,7 @@ if ($recent_products->have_posts()) : ?>
     <section class="product-carousel-section py-5">
         <div class="container">
             <div class="section-header text-center mb-4">
+                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo-icon.png"  >
                 <h2 class="section-title">Latest Products</h2>
                 <p class="section-subtitle">Explore our newest additions</p>
             </div>

@@ -274,8 +274,7 @@ a:hover {
 .simple-banner .image-card img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 .simple-banner .image-column {
@@ -292,8 +291,7 @@ a:hover {
 .simple-banner .image-column .image-half img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 @media (max-width: 768px) {
@@ -428,6 +426,15 @@ a:hover {
 .about-section {
   background-color: #fdfdfd;
 }
+.about-section .about-header .logo {
+  width: 311px;
+  display: flex;
+  justify-content: center;
+}
+.about-section .about-header .logo img {
+  height: 50px;
+  width: auto;
+}
 .about-section img {
   border-radius: 0.75rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -496,8 +503,7 @@ a:hover {
 .whyus-section .whyus-card .img-circle img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .whyus-section .whyus-card .title {
   font-size: 1.5rem;
@@ -531,6 +537,10 @@ a:hover {
   color: #f7941d;
 }
 
+.product-carousel-section .section-header img {
+  height: 50px;
+  width: auto;
+}
 .product-carousel-section .product-card {
   height: 350px;
   display: flex;
@@ -542,8 +552,7 @@ a:hover {
 .product-carousel-section .product-image {
   width: 100%;
   height: 180px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   border-radius: 10px;
   background-color: #fff;
   padding: 10px;
@@ -616,8 +625,7 @@ a:hover {
 .simple-banner .image-card img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 .simple-banner .image-column {
@@ -634,8 +642,7 @@ a:hover {
 .simple-banner .image-column .image-half img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 @media (max-width: 768px) {
@@ -665,7 +672,20 @@ a:hover {
 }
 
 .category-icons-section {
-  background: linear-gradient(135deg, #8ec58e, #ffffff);
+  background: rgba(237, 221, 83, 0.08);
+  background: linear-gradient(90deg, rgba(237, 221, 83, 0.08) 0%, rgba(255, 255, 255, 0.17) 50%, rgba(237, 221, 83, 0.09) 100%);
+}
+.category-icons-section img {
+  height: 50px;
+  width: auto;
+}
+.category-icons-section .section-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.category-icons-section .section-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
 }
 .category-icons-section .category-icon-card {
   transition: transform 0.3s ease;
@@ -679,7 +699,7 @@ a:hover {
   width: 100px;
   height: 100px;
   padding: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -688,8 +708,7 @@ a:hover {
   max-width: 100%;
   max-height: 100%;
   border-radius: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .category-icons-section .category-icon-card .category-title {
   font-family: "Figtree", sans-serif;
@@ -725,19 +744,6 @@ a:hover {
 .herbal-hero .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-}
-.herbal-hero .hero-content .cta-button {
-  display: inline-block;
-  background-color: #8bc34a;
-  color: #fff;
-  padding: 12px 30px;
-  font-size: 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-.herbal-hero .hero-content .cta-button:hover {
-  background-color: #689f38;
 }
 @media (max-width: 768px) {
   .herbal-hero .hero-content h1 {

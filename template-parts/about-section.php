@@ -6,6 +6,13 @@
       </div>
       <div class="col-12 col-lg-6 col-xl-7">
         <div class="row justify-content-xl-center">
+          <div class="col-12 col-xl-11 about-header">
+            <div class="logo">
+              <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo-icon.png" alt="logo">
+
+            </div>
+            <h2 class="mb-3">About National Herbs</h2>
+            <p class="lead fs-4 text-secondary mb-3">
           <div class="col-12 col-xl-11">
             <h2 class="section-title mb-3">About National Herbs</h2>
             <p class="para mb-3">
