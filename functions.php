@@ -376,7 +376,7 @@ function theme_stylescript() {
   	wp_enqueue_style( 'line-awesome', 'https://cdn.lineicons.com/3.0/lineicons.css' );
 
     // Your Custom CSS
-    wp_enqueue_style( 'nationalherbo_css', get_template_directory_uri() . '/assets/css/theme.css', array(), '1.0' );
+    wp_enqueue_style( 'nationalherbo_css', get_template_directory_uri() . '/assets/css/theme.css', array(), '1.5' );
 
     // Bootstrap 5 JS
     wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/vendor/js/bootstrap.min.js', array(), null, true );
