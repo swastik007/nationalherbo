@@ -1,7 +1,8 @@
 <?php /* customer.php */ ?>
 <section class="py-5 customer-section">
   <div class="container">
-    <div class="text-center mb-5">
+    <div class="text-center mb-5 title">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo-icon.png" alt="icon">
       <h2 class="section-title">National Herbs – Your Gateway to Natural Wellness</h2>
       <span class="section-subtitle">Trusted Partner for Herbal Manufacturing</span>
     </div>
