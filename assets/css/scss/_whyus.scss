@@ -43,6 +43,9 @@
       transform: rotateZ(-1deg) scale(1.02);
       box-shadow: 0 12px 30px rgba(0, 77, 26, 0.2);
     }
+    img {
+      color: $primary;
+    }
 
     .img-circle {
       width: 70px;
