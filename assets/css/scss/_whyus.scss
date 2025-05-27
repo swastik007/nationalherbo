@@ -2,7 +2,21 @@
   position: relative;
   background: #fff;
   overflow: hidden;
-  padding: 60px 0 120px;
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  .container {
+    position: relative;
+    z-index: 2;
+
+    .section-header{
+
+      img{
+        height: 50px;
+        width: auto;
+      }
+    }
+  }
 
   .green-bottom-bg {
     position: absolute;

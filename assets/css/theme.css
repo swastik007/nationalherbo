@@ -372,6 +372,10 @@ a:hover {
 .customer-section {
   background-color: #f9f9f9;
 }
+.customer-section .title img {
+  height: 50px;
+  width: auto;
+}
 .customer-section .counter-box {
   padding: 20px;
   border-radius: 8px;
@@ -433,6 +437,10 @@ a:hover {
   background: #fff;
   overflow: hidden;
   padding: 60px 0 120px;
+}
+.whyus-section .container .section-header img {
+  height: 50px;
+  width: auto;
 }
 .whyus-section .green-bottom-bg {
   position: absolute;
