@@ -11,11 +11,10 @@
               <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo-icon.png" alt="logo" class="section-icon mb-2">
               <h2 class="section-title mb-3">About National Herbs</h2>
             </div>
-            <p class="para mb-3">
-              National Herbs is committed to delivering authentic, natural wellness products rooted in tradition and backed by science.
-            </p>
-            <p class="para mb-5">
-              We source and craft premium herbal supplements, teas, and remedies using age-old herbal knowledge. Our mission is to make holistic health accessible, sustainable, and effective for every individual seeking natural solutions.
+            <p class="para mb-3" style="text-align: justify;">
+              National Herbs by highlighting the power of nature believes in providing pure, effective and sustainable herbal products that support your health and well-being.
+              We promote natural health by utilizing our traditional herbal knowledge which are backed by science and aim to fulfill the needs of people who are looking for a natural solution. 
+              From our various product such as Scar Shine Combo Set, Hair Care products, and Facial creams we have it all. Our quality as well as chemical free products is all about assuring good health along with beauty for people. 
             </p>
             <div class="row gy-4 gy-md-0 gx-xxl-5">
               <div class="col-12 col-md-6">
@@ -34,11 +33,11 @@
               <div class="col-12 col-md-6">
                 <div class="d-flex">
                   <div class="me-4 text-success">
-                    <i class="bi bi-heart-pulse-fill fs-2"></i>
+                    <i class="bi bi-droplet-half fs-2"></i>
                   </div>
                   <div>
-                    <h4 class="mb-2">Holistic Wellness</h4>
-                    <p class="para mb-0">Our formulations support mind, body, and soul — naturally and effectively.</p>
+                    <h4 class="mb-2">Chemical Free</h4>
+                    <p class="para mb-0">Your skin deserves better-go chemical free because less is more when its chemical free.</p>
                   </div>
                 </div>
               </div>
