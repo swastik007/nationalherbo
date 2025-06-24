@@ -1,0 +1,334 @@
+.about-hero-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  background-color: #fff; // or use soft herbal tone
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2d2d2d;
+    line-height: 1.5;
+    max-width: 40rem;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.our-journey-section {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  .section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+  }
+
+  .para {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #444;
+  }
+
+  img {
+    z-index: 2;
+    border-radius: 1rem;
+  }
+}
+
+.mission-vision-section {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+  }
+
+  .para {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #444;
+    width: 500px;
+  }
+
+  .section-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  .herbo-watermark-icon {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+.core-values-section {
+  background: #f9f9f9;
+
+  .section-header {
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .section-icon {
+      width: 50px;
+    }
+  }
+
+  .value-box {
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    i {
+      display: inline-block;
+      color: #fff;
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &.box-1 {
+      width: 250px;
+      height: 190px;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b); // Orange
+    }
+
+    &.box-2 {
+      width: 250px;
+      height: 190px;
+      background: linear-gradient(135deg, #ff6a00, #ee0979); // Pink/Orange
+    }
+
+    &.box-3 {
+      width: 250px;
+      height: 190px;
+      background: linear-gradient(135deg, #5f2c82, #49a09d); // Purple-Green
+    }
+
+    &.box-4 {
+      width: 250px;
+      height: 190px;
+      background: linear-gradient(135deg, #654ea3, #eaafc8); // Purple-Pink
+    }
+  }
+}
+
+.meet-team-section {
+  background-color: #fefefc;
+
+  .section-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+
+  .section-icon {
+    width: 50px;
+    margin-bottom: 0.5rem;
+  }
+
+  .team-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .team-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .text-muted {
+    color: #777 !important;
+  }
+}
+
+.certifications-section {
+  background-color: #f8f9f8;
+
+  .section-icon {
+    width: 50px;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .cert-logo {
+    max-width: 120px;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+
+    &:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+  }
+
+  p.text-muted {
+    font-size: 0.95rem;
+  }
+}
+
+.sustainability-highlight-section {
+  background: #f5fbf7;
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .section-icon {
+    width: 50px;
+    margin-bottom: 0.5rem;
+  }
+
+  .sustainability-points {
+    i {
+      color: #67b26f;
+      flex-shrink: 0;
+    }
+
+    h5 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  }
+
+  .image-wrap {
+    position: relative;
+
+    img {
+      border-radius: 1rem;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.manufacturing-process-section {
+  background-color: #f9fdfb;
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .section-icon {
+    width: 50px;
+    margin-bottom: 0.5rem;
+  }
+
+  .process-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .step-number {
+      position: absolute;
+      font-size: 4rem;
+      font-weight: 700;
+      color: #e0f0e8;
+      top: 15px;
+      left: 15px;
+      z-index: 0;
+    }
+
+    .process-icon {
+      background-color: #67b26f;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 20px;
+      margin: 0 auto 1rem;
+      z-index: 1;
+      position: relative;
+    }
+
+    h5 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
