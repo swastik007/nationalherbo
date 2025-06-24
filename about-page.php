@@ -180,16 +180,16 @@ get_header();
     <!-- Logos Grid -->
     <div class="row g-4 justify-content-center align-items-center">
       <div class="col-6 col-md-3 text-center">
-        <img src="<?php bloginfo('template_directory'); ?>/assets/images/cert1.png" alt="Certification 1" class="cert-logo">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/images/certificate1.jpg" alt="Certification 1" class="cert-logo">
       </div>
       <div class="col-6 col-md-3 text-center">
-        <img src="<?php bloginfo('template_directory'); ?>/assets/images/cert2.png" alt="Certification 2" class="cert-logo">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/images/certificate2.jpg" alt="Certification 2" class="cert-logo">
       </div>
       <div class="col-6 col-md-3 text-center">
-        <img src="<?php bloginfo('template_directory'); ?>/assets/images/cert3.png" alt="Certification 3" class="cert-logo">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/images/certificate3.jpg" alt="Certification 3" class="cert-logo">
       </div>
       <div class="col-6 col-md-3 text-center">
-        <img src="<?php bloginfo('template_directory'); ?>/assets/images/cert4.png" alt="Certification 4" class="cert-logo">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/images/certificate4.jpg" alt="Certification 4" class="cert-logo">
       </div>
     </div>
   </div>

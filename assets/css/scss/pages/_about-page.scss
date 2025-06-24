@@ -205,7 +205,7 @@
   }
 
   .cert-logo {
-    max-width: 120px;
+    width: 250px;
     height: auto;
     filter: grayscale(100%);
     opacity: 0.8;
@@ -258,8 +258,8 @@
 
     img {
       border-radius: 1rem;
-      max-width: 100%;
-      height: auto;
+      width: 500px;
+      height: 500px;
     }
   }
 }
@@ -295,7 +295,7 @@
       position: absolute;
       font-size: 4rem;
       font-weight: 700;
-      color: #e0f0e8;
+      color: #a5c3b4;
       top: 15px;
       left: 15px;
       z-index: 0;
