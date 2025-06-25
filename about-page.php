@@ -303,6 +303,29 @@ get_header();
   </div>
 </section>
 
+<section class="newsletter-section py-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-between g-4">
+      
+      <!-- Text Column -->
+      <div class="col-12 col-md-6">
+        <div class="section-header">
+          <h2 class="section-title">Stay Connected with Nature</h2>
+          <p class="text-muted">Subscribe to receive herbal insights, new product updates, and exclusive offers. No spam — just wellness!</p>
+        </div>
+      </div>
+
+      <!-- Form Column -->
+      <div class="col-12 col-md-6">
+        <form class="newsletter-form d-flex flex-column flex-md-row align-items-stretch gap-2">
+          <input type="email" class="form-control rounded-pill" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-success rounded-pill px-4">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 

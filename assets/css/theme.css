@@ -1036,6 +1036,39 @@ a:hover {
   z-index: 1;
 }
 
+.newsletter-section {
+  background: linear-gradient(135deg, #e3f4e5, #f9fff9);
+  border-top: 1px solid #d7edd7;
+}
+.newsletter-section .section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2e5333;
+}
+.newsletter-section .text-muted {
+  color: #555;
+}
+.newsletter-section .newsletter-form input[type=email] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+.newsletter-section .newsletter-form input[type=email]:focus {
+  border-color: #67b26f;
+  outline: none;
+}
+.newsletter-section .newsletter-form button {
+  font-weight: 600;
+  background-color: #67b26f;
+  border: none;
+  transition: background-color 0.3s;
+}
+.newsletter-section .newsletter-form button:hover {
+  background-color: #519d5b;
+}
+
 .blogs-page {
   font-family: "Segoe UI", sans-serif;
   color: #333;
@@ -1247,4 +1280,82 @@ a:hover {
   font-size: 0.9rem;
   color: #888;
   margin-bottom: 1rem;
+}
+
+.products-hero-section {
+  background: linear-gradient(135deg, #e8f5ec, #f5fdf7);
+  position: relative;
+  overflow: hidden;
+}
+.products-hero-section .hero-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #2c5332;
+}
+@media (min-width: 768px) {
+  .products-hero-section .hero-title {
+    font-size: 3rem;
+  }
+}
+.products-hero-section .hero-subtext {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.products-hero-section .herbo-icon-bg {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.07;
+  max-width: 400px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.product-grid-section {
+  background: #f8fdf9;
+}
+.product-grid-section .section-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.product-grid-section .product-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.product-grid-section .product-card:hover {
+  transform: translateY(-5px);
+}
+.product-grid-section .product-card img {
+  width: 100%;
+  height: auto;
+}
+.product-grid-section .product-card .product-body {
+  padding: 1rem;
+}
+.product-grid-section .product-card .product-body .product-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2e5333;
+  margin-bottom: 0.5rem;
+}
+.product-grid-section .product-card .product-body .product-price {
+  font-weight: 500;
+  color: #67b26f;
+}
+.product-grid-section .product-card .product-body .product-ingredients {
+  font-size: 0.9rem;
+  color: #666;
+}
+.product-grid-section .product-card .product-body .product-desc {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=theme.css.map */
